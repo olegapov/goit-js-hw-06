@@ -8,13 +8,11 @@ const ingredients = [
 ];
 
 const container = document.querySelector(`ul`);
-const li = document.createElement(`li`);
-
-li.textContent = ingredients;
-li.className = `item`;
-
-console.log(li);
-
-const creatLiElement = ingredients.map((item) => `<li>${item}</li>`).join("");
-li.innerHTML = creatLiElement;
-container.append(li);
+const creatLiElement = ingredients.map((item) => {
+  const li = document.createElement(`li`);
+  li.textContent = item;
+  li.className = `item`;
+  return li;
+});
+container.append(...creatLiElement);
+console.log(container);
