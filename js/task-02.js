@@ -15,4 +15,3 @@ const creatLiElement = ingredients.map((item) => {
   return li;
 });
 container.append(...creatLiElement);
-console.log(container);

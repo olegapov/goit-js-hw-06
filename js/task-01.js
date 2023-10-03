@@ -9,4 +9,3 @@ items.forEach((number) => {
   console.log(`Category: ${category}`);
   console.log(`Elements: ${item.length}`);
 });
-// console.log(h2.children);

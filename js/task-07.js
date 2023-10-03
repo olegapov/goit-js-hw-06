@@ -6,5 +6,3 @@ fontSize.addEventListener(`input`, () => {
   spanSize.style.fontSize = `${sizeText}px`;
 });
 
-console.log(spanSize);
-console.log(fontSize);
